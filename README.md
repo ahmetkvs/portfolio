@@ -1,12 +1,58 @@
-# React + Vite
+# Ahmet Kavas - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website. I am a web developer trainee currently learning and building projects to showcase my skills.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Ahmet Kavas - Portfolio Website](#ahmet-kavas---portfolio-website)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Technologies Used](#technologies-used)
+  - [Project Structure](#project-structure)
+  - [Development Process](#development-process)
+  - [Future Enhancements](#future-enhancements)
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+My name is Ahmet Kavas, and I am a web developer trainee based in Sakarya, Türkiye. This website serves as my portfolio to showcase my frontend development skills and my journey in learning web development. I am currently focusing on building projects with React and other modern web technologies.
+
+## Technologies Used
+
+- **Frontend:**
+
+  - React
+  - Vite
+  - Tailwind CSS
+  - ...
+
+- **Deployment:**
+
+  - Vercel
+
+- **Other:**
+  - Git and GitHub for version control
+
+## Project Structure
+
+The main components of this project include:
+
+- `src/`: Contains the React source code.
+- `public/`: Contains static assets like the logo.
+- `index.html`: The main HTML file.
+- `README.md`: This file, providing project information.
+
+## Development Process
+
+- **Initial Setup:** Project was initialized using Vite with React.
+- ...
+
+## Future Enhancements
+
+- Implementing the full portfolio sections (Projects, Skills, Profile).
+- Integrating the blog functionality.
+- Adding more detailed project descriptions and live demos.
+- ...
+
+---
+
+**Last Updated:** [22.03.2025]
