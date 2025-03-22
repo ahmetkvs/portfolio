@@ -14,7 +14,7 @@ This repository contains the source code for my personal portfolio website. I am
 
 ## About
 
-My name is Ahmet Kavas, and I am a web developer trainee based in Sakarya, Türkiye. This website serves as my portfolio to showcase my frontend development skills and my journey in learning web development. I am currently focusing on building projects with React and other modern web technologies.
+My name is Ahmet Kavas, and I am a web developer trainee based in Turkey. This website serves as my portfolio to showcase my frontend development skills and my journey in learning web development. I am currently focusing on building projects with React and other modern web technologies.
 
 ## Technologies Used
 
