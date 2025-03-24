@@ -6,7 +6,7 @@ import ThemeSwitchers from "./components/themeSwitchers/ThemeSwitchers";
 function App() {
   return (
     <BrowserRouter>
-      <main className="min-h-screen w-7/10 mx-auto flex flex-col items-center">
+      <main className="min-h-screen w-screen px-4 md:px-8 lg:px-16 flex flex-col items-center space-y-8">
         <ThemeSwitchers />
         <Navbar />
         <Header />

@@ -1,27 +1,43 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 function Header() {
   return (
-    <header className="w-full my-20 flex items-center gap-4">
-      <div className="header-content w-1/2">
-        <p className="styled-name font-semibold">Ahmet Kavas</p>
-        <h1 className="text-5xl font-semibold my-5">Learning & Building</h1>
-        <p>Merhaba, ismim ahmet, ...</p>
-        <div className="header-content-buttons flex gap-2">
-          <button className="px-3 py-1 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white">
+    <header className="w-full h-[428px] flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4 md:px-8 lg:px-16 py-8">
+      {/* Text Content */}
+      <div className="flex-1">
+        <p className="font-semibold text-lg">Ahmet Kavas</p>
+        <h1 className="text-4xl md:text-5xl font-semibold mt-4 mb-6">
+          Learning & Building
+        </h1>
+        <p className="text-base md:text-lg leading-relaxed mb-6">
+          Hi, I'm Ahmet, a passionate full-stack developer driven by a love for
+          building intuitive and efficient web applications. My journey began
+          with a deep curiosity for the fundamentals of computing, leading me
+          from foundational networking principles to the dynamic world of modern
+          web development. I thrive on creating seamless user experiences and am
+          eager to contribute my skills to innovative projects.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <button className="px-4 py-2 text-white bg-violet-900 border-2 border-violet-600 rounded-md hover:bg-white hover:text-violet-900 transition-colors duration-300">
             Hire me
           </button>
-          <button className="px-3 py-1 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white">
+          <button className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300">
+            <FaGithub className="text-xl" />
             Github
           </button>
-          <button className="px-3 py-1 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white">
+          <button className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300">
+            <FaLinkedin className="text-xl" />
             Linkedin
           </button>
         </div>
       </div>
-      <div className="header-image w-1/2 flex justify-center">
+
+      {/* Image */}
+      <div className="flex-1 max-w-[475px] w-full">
         <img
-          className="rounded-xl"
-          src="https://picsum.photos/250/200"
-          alt=""
+          className="rounded-xl object-cover w-full h-full"
+          src="/assets/aijrHeader.webp"
+          alt="hero image"
         />
       </div>
     </header>
