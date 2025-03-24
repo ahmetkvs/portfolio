@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import ThemeSwitchers from "./components/themeSwitchers/ThemeSwitchers";
 import Skills from "./components/skills/Skills";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
         <Navbar />
         <Header />
         <Skills />
-        <hr className="w-full border-t-2 border-solid border-gray-400 mr-2" />
+        <hr className="w-full border-t-2 border-solid border-gray-400" />
+        <hr className="w-full border-t-2 border-solid border-gray-400" />
+        <Footer />
       </main>
     </BrowserRouter>
   );
