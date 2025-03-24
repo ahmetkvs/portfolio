@@ -32,9 +32,8 @@ function Profile() {
             foundation has shaped my perspective as a developer, emphasizing a
             deep understanding of core concepts. My passion for building tools
             that empower users led me to a full-stack development bootcamp at
-            Workintech, where I've honed my skills in [mention key technologies
-            like React, Node.js, etc.]. I'm excited to apply my knowledge and
-            contribute to impactful projects.
+            Workintech, where I've honed my skills in React, JS and more. I'm
+            excited to apply my knowledge and contribute to impactful projects.
           </p>
         </div>
       </div>
