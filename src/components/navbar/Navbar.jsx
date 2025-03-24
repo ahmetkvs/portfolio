@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="w-full h-[62px] flex items-center justify-between px-4 md:px-8 lg:px-16">
-      {/*add the light logo if mode is dark */}
+    <nav className="w-full flex items-center justify-between px-4 md:px-8 lg:px-16 py-4">
       <img
         src="/assets/logoDark.svg"
         alt="logo"

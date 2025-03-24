@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/header/Header";
 import ThemeSwitchers from "./components/themeSwitchers/ThemeSwitchers";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <ThemeSwitchers />
         <Navbar />
         <Header />
+        <Skills />
+        <hr className="w-full border-t-2 border-solid border-gray-400 mr-2" />
       </main>
     </BrowserRouter>
   );
