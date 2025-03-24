@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Header() {
   return (
     <header className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4 md:px-8 lg:px-16 py-8">
-      {/* Text Content */}
       <div className="flex-1">
         <div className="flex items-center">
           <hr className="w-20 border-t-2 border-solid border-violet-600 mr-2" />
@@ -24,18 +23,26 @@ function Header() {
           <button className="px-4 py-2 text-white bg-violet-900 border-2 border-violet-600 rounded-md hover:bg-white hover:text-violet-900 transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800">
             Hire me
           </button>
-          <button className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800">
+          <a
+            href="https://github.com/ahmetkvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800"
+          >
             <FaGithub className="text-xl" />
             Github
-          </button>
-          <button className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmetkavas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 text-violet-600 border-2 border-violet-600 rounded-md hover:bg-violet-900 hover:text-white transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800"
+          >
             <FaLinkedin className="text-xl" />
             Linkedin
-          </button>
+          </a>
         </div>
       </div>
-
-      {/* Image */}
       <div className="flex-1 max-w-[475px] w-full">
         <img
           className="rounded-xl object-cover w-full h-full"

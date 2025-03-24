@@ -1,4 +1,4 @@
-const skillsData = [
+const skillsContent = [
   {
     en: {
       heading: "JavaScript",
@@ -73,4 +73,4 @@ const skillsData = [
   },
 ];
 
-export default skillsData;
+export default skillsContent;

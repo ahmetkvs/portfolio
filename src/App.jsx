@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import ThemeSwitchers from "./components/themeSwitchers/ThemeSwitchers";
 import Skills from "./components/skills/Skills";
 import Footer from "./components/footer/Footer";
+import Profile from "./components/profile/Profile";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Navbar />
         <Header />
         <Skills />
-        <hr className="w-full border-t-2 border-solid border-gray-400" />
-        <hr className="w-full border-t-2 border-solid border-gray-400" />
+        <hr className="w-full border-t-2 border-solid border-gray-300" />
+        <Profile />
+        <hr className="w-full border-t-2 border-solid border-gray-300" />
         <Footer />
       </main>
     </BrowserRouter>
