@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useLangTheme } from "../../contexts/LanguageThemeContext";
 
 function Navbar() {
   const { ldTheme } = useLightDarkTheme();
+  const { langTheme } = useLangTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -61,7 +63,7 @@ function Navbar() {
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
-          Skills
+          {langTheme === "en" ? "Skills" : "Yetenekler"}
         </Link>
         <Link
           to="#projects-section"
@@ -69,7 +71,7 @@ function Navbar() {
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
-          Projects
+          {langTheme === "en" ? "Projects" : "Projeler"}
         </Link>
         <Link
           to="#"
@@ -79,7 +81,7 @@ function Navbar() {
               : "bg-white border-2 border-violet-600 text-violet-600 hover:bg-violet-900 hover:text-white"
           }`}
         >
-          Hire me
+          {langTheme === "en" ? "Hire me" : "Benimle Çalışın"}
         </Link>
       </div>
     </nav>

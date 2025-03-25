@@ -1,11 +1,17 @@
 import React from "react";
 import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
+import { useLangTheme } from "../../contexts/LanguageThemeContext";
 
 function ThemeSwitchers() {
   const { ldTheme, setLdTheme } = useLightDarkTheme();
+  const { langTheme, setLangTheme } = useLangTheme();
 
   const handleThemeToggle = () => {
     setLdTheme(ldTheme === "light" ? "dark" : "light");
+  };
+
+  const handleLanguageChange = () => {
+    setLangTheme(langTheme === "en" ? "tr" : "en");
   };
 
   return (
@@ -15,10 +21,12 @@ function ThemeSwitchers() {
           className={`text-sm ${
             ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
           }`}
+          htmlFor="ldTheme"
         >
-          Dark Mode
+          {langTheme === "en" ? "Dark Mode" : "Karanlık Modu"}
         </label>
         <input
+          id="ldTheme"
           type="checkbox"
           checked={ldTheme === "dark"}
           onChange={handleThemeToggle}
@@ -28,14 +36,24 @@ function ThemeSwitchers() {
           className={`| ${
             ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
           }`}
-        ></p>
-        <p
-          className={` ${
+        >
+          |
+        </p>
+        <label
+          htmlFor="langTheme"
+          className={`text-sm ${
             ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
           }`}
         >
-          English Turkish
-        </p>
+          {langTheme === "en" ? "Türkçe'ye geç" : "Switch to English"}
+        </label>
+        <input
+          type="checkbox"
+          id="langTheme"
+          checked={langTheme === "tr"}
+          onChange={handleLanguageChange}
+          className="form-checkbox h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
+        />
       </div>
     </aside>
   );

@@ -1,8 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
+import { portfolioContent } from "../../data/portfolioContent";
+import { useLangTheme } from "../../contexts/LanguageThemeContext";
 
 function Header() {
   const { ldTheme } = useLightDarkTheme();
+  const { langTheme } = useLangTheme();
   return (
     <header className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-4 md:px-8 lg:px-16 py-8">
       <div className="flex-1">
@@ -14,17 +17,16 @@ function Header() {
           className={`text-4xl md:text-5xl font-semibold mt-4 mb-6 
           ${ldTheme === "dark" ? "text-slate-400" : "text-black"}`}
         >
-          The Journey of Development
+          {langTheme === "en"
+            ? portfolioContent.header.heading.en
+            : portfolioContent.header.heading.tr}
         </h1>
         <p
           className={`md:text-lg mb-6 ${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}
         >
-          Hi, I'm Ahmet, a passionate full-stack developer driven by a love for
-          building intuitive and efficient web applications. My journey began
-          with a deep curiosity for the fundamentals of computing, leading me
-          from foundational networking principles to the dynamic world of modern
-          web development. I thrive on creating seamless user experiences and am
-          eager to contribute my skills to innovative projects.
+          {langTheme === "en"
+            ? portfolioContent.header.main.en
+            : portfolioContent.header.main.tr}
         </p>
         <div className="flex flex-wrap gap-2">
           <button
@@ -34,7 +36,9 @@ function Header() {
                 : "bg-violet-900 border-2 border-violet-600 text-white hover:bg-white hover:text-violet-900"
             }`}
           >
-            Hire me
+            {langTheme === "en"
+              ? portfolioContent.header.button.en
+              : portfolioContent.header.button.tr}
           </button>
           <a
             href="https://github.com/ahmetkvs"
