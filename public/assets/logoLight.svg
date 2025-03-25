@@ -13,15 +13,39 @@
      id="defs1" />
   <g
      id="layer1">
+    <rect
+       style="fill:#252128;fill-opacity:1;fill-rule:nonzero;stroke-width:0.264583"
+       id="rect1"
+       width="8.6203279"
+       height="8.4902096"
+       x="-0.03252954"
+       y="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
        x="0.35782474"
        y="5.1071382"
        id="text1"><tspan
          id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="0.35782474"
          y="5.1071382">a&lt;/&gt;k</tspan></text>
   </g>
+  <rect
+     style="fill:#ffffff;stroke-width:0.264583"
+     id="rect2"
+     width="8.603056"
+     height="8.4981403"
+     x="-0.052457657"
+     y="0.020983063" />
+  <text
+     xml:space="preserve"
+     style="font-weight:bold;font-size:2.82223px;font-family:Consolas;-inkscape-font-specification:'Consolas, Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke-width:0.264583"
+     x="0.33572891"
+     y="5.1513419"
+     id="text2"><tspan
+       id="tspan2"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="0.33572891"
+       y="5.1513419">a&lt;/&gt;k</tspan></text>
 </svg>

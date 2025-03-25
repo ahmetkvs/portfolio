@@ -1,25 +1,40 @@
+import React from "react";
 import { Link } from "react-router-dom";
+import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext"; // Import the context
 
 function Footer() {
+  const { ldTheme } = useLightDarkTheme();
+
   return (
-    <footer className="bg-[#F5F5F5] py-16 w-screen">
+    <footer
+      className={`py-16 w-screen ${ldTheme === "dark" ? "bg-black" : "bg-[#F5F5F5]"}`}
+    >
       <div className="w-screen px-8 md:px-16 lg:px-32 mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-center md:text-left mb-8 md:mb-0">
-          <h2 className="text-4xl font-semibold mb-4">
+          <h2
+            className={`text-4xl font-semibold mb-4 ${
+              ldTheme === "dark" ? "text-slate-400" : "text-black"
+            }`}
+          >
             Let's work together on <br /> your next product.
           </h2>
-          <p className="text-red-700 underline font-semibold">
+          <p
+            className={`underline font-semibold ${ldTheme === "dark" ? "text-violet-400" : "text-red-700"}`}
+          >
             ahmetpkavas@gmail.com
           </p>
         </div>
 
         <nav className="flex items-center space-x-4">
-          <Link to="#" className="text-gray-700 font-semibold hover:underline">
+          <Link
+            to="#"
+            className={`font-semibold hover:underline ${ldTheme === "dark" ? "text-white" : "text-gray-700"}`}
+          >
             Personal Blog
           </Link>
           <a
             href="https://github.com/ahmetkvs"
-            className="text-green-700 font-semibold hover:underline"
+            className="font-semibold hover:underline text-green-700"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +42,7 @@ function Footer() {
           </a>
           <a
             href="https://www.linkedin.com/in/ahmetkavas"
-            className="text-blue-700 font-semibold hover:underline"
+            className="font-semibold hover:underline text-blue-700"
             target="_blank"
             rel="noopener noreferrer"
           >
