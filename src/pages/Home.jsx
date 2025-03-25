@@ -1,17 +1,17 @@
-import MainLayout from "../layouts/MainLayout";
+import HomeLayout from "../layouts/HomeLayout";
 import ThemeSwitchers from "../components/themeSwitchers/ThemeSwitchers";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 
-function Main() {
+function Home() {
   return (
     <>
       <ThemeSwitchers />
       <Navbar />
-      <MainLayout />
+      <HomeLayout />
       <Footer />
     </>
   );
 }
 
-export default Main;
+export default Home;

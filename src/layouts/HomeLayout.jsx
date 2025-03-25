@@ -3,7 +3,7 @@ import Header from "../components/header/Header";
 import Profile from "../components/profile/Profile";
 import Skills from "../components/skills/Skills";
 
-function MainLayout() {
+function HomeLayout() {
   return (
     <main className="min-h-screen w-screen px-4 md:px-8 lg:px-16 flex flex-col items-center space-y-8">
       <Header />
@@ -15,4 +15,4 @@ function MainLayout() {
   );
 }
 
-export default MainLayout;
+export default HomeLayout;
