@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext"; // Import the context
+import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import { portfolioContent } from "../../data/portfolioContent";
 
 function Footer() {
   const { ldTheme } = useLightDarkTheme();
+  const { langTheme } = useLangTheme();
 
   return (
     <footer
@@ -16,7 +19,13 @@ function Footer() {
               ldTheme === "dark" ? "text-slate-400" : "text-black"
             }`}
           >
-            Let's work together on <br /> your next product.
+            {langTheme === "en"
+              ? portfolioContent.footer.heading.en1
+              : portfolioContent.footer.heading.tr1}{" "}
+            <br />{" "}
+            {langTheme === "en"
+              ? portfolioContent.footer.heading.en2
+              : portfolioContent.footer.heading.tr2}
           </h2>
           <p
             className={`underline font-semibold ${ldTheme === "dark" ? "text-violet-400" : "text-red-700"}`}

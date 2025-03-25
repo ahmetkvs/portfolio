@@ -1,58 +1,81 @@
 import React from "react";
 import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
+import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import { portfolioContent } from "../../data/portfolioContent";
 
 function Profile() {
   const { ldTheme } = useLightDarkTheme();
+  const { langTheme } = useLangTheme();
 
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-16">
       <h2
         className={`text-4xl font-semibold mb-8 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
       >
-        Profile
+        {langTheme === "en"
+          ? portfolioContent.profile.left.heading.en
+          : portfolioContent.profile.left.heading.tr}
       </h2>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="md:w-1/2">
           <h2
             className={`text-2xl mb-6 ${ldTheme === "dark" ? "text-violet-400" : "text-violet-600"}`}
           >
-            Profile
+            {langTheme === "en"
+              ? portfolioContent.profile.left.heading.en
+              : portfolioContent.profile.left.heading.tr}
           </h2>
           <div className="flex flex-col gap-7">
             <div className="flex">
               <dt
                 className={`font-semibold w-32 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
               >
-                Doğum tarihi
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.bdk.en
+                  : portfolioContent.profile.left.bdk.tr}
               </dt>
               <dd
                 className={`${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}
               >
-                22.09.2000
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.bdv.en
+                  : portfolioContent.profile.left.bdv.tr}
               </dd>
             </div>
             <div className="flex">
               <dt
                 className={`font-semibold w-32 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
               >
-                İkamet Şehri
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.lok.en
+                  : portfolioContent.profile.left.lok.tr}
               </dt>
               <dd
                 className={`${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}
               >
-                Sakarya
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.lov.en
+                  : portfolioContent.profile.left.lov.tr}
               </dd>
             </div>
             <div className="flex">
               <dt
                 className={`font-semibold w-32 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
               >
-                Eğitim Durumu
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.edk.en
+                  : portfolioContent.profile.left.edk.tr}
               </dt>
               <dd
                 className={`${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}
               >
-                Sakarya Ünv. Bilişim Sis. Müh. <br /> Lisans, 2018
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.edv.en1
+                  : portfolioContent.profile.left.edv.tr1}{" "}
+                <br />{" "}
+                {langTheme === "en"
+                  ? portfolioContent.profile.left.edv.en2
+                  : portfolioContent.profile.left.edv.tr2}
               </dd>
             </div>
           </div>
@@ -61,20 +84,16 @@ function Profile() {
           <h2
             className={`text-2xl mb-6 ${ldTheme === "dark" ? "text-violet-400" : "text-violet-600"}`}
           >
-            About Me
+            {langTheme === "en"
+              ? portfolioContent.profile.right.heading.en
+              : portfolioContent.profile.right.heading.tr}
           </h2>
           <p
             className={`${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}
           >
-            Driven by a methodical approach to learning, I began my journey by
-            exploring the intricacies of computer systems, starting with
-            networking fundamentals and progressing through a rigorous
-            Information Systems Engineering degree at Sakarya University. This
-            foundation has shaped my perspective as a developer, emphasizing a
-            deep understanding of core concepts. My passion for building tools
-            that empower users led me to a full-stack development bootcamp at
-            Workintech, where I've honed my skills in React, JS and more. I'm
-            excited to apply my knowledge and contribute to impactful projects.
+            {langTheme === "en"
+              ? portfolioContent.profile.right.text.en
+              : portfolioContent.profile.right.text.tr}
           </p>
         </div>
       </div>
