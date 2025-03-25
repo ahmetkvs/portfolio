@@ -3,7 +3,7 @@ const skillsContent = [
     en: {
       heading: "JavaScript",
       message:
-        "Proficient in modern JavaScript development, including ES6+ features, asynchronous programming, and DOM manipulation. Experienced in building interactive and performant web applications.",
+        "Proficient in modern JavaScript development, including ES6+ features, asynchronous programming and DOM manipulation. Experienced in building interactive and performant web applications.",
     },
     tr: {
       heading: "JavaScript",
