@@ -39,7 +39,7 @@ function Footer() {
             to="#"
             className={`font-semibold hover:underline ${ldTheme === "dark" ? "text-white" : "text-gray-700"}`}
           >
-            Personal Blog
+            Blog
           </Link>
           <a
             href="https://github.com/ahmetkvs"
