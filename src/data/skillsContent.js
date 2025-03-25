@@ -51,7 +51,7 @@ const skillsContent = [
     en: {
       heading: "Git",
       message:
-        "Experienced in using Git for version control, including branching, merging, and conflict resolution. Proficient in collaborative development workflows.",
+        "Experienced in using Git for version control, including branching, merging and conflict resolution. Proficient in collaborative development workflows.",
     },
     tr: {
       heading: "Git",
@@ -63,7 +63,7 @@ const skillsContent = [
     en: {
       heading: "Data Structures and Algorithms (DSA)",
       message:
-        "Solid understanding of fundamental data structures and algorithms, including arrays, linked lists, trees, sorting, and searching. Able to analyze and implement efficient solutions to algorithmic problems.",
+        "Solid understanding of fundamental data structures and algorithms, including arrays, linked lists, trees, sorting and searching. Able to analyze and implement efficient solutions to algorithmic problems.",
     },
     tr: {
       heading: "Veri Yapıları ve Algoritmalar",

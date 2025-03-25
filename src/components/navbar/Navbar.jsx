@@ -45,7 +45,7 @@ function Navbar() {
           isMenuOpen
             ? "flex-col absolute top-full left-0 w-full bg-opacity-90 backdrop-blur-md py-4 md:static md:flex-row transition-all duration-300"
             : "hidden md:flex"
-        } ${ldTheme === "dark" ? "bg-zinc-900" : "bg-white"}`}
+        } ${ldTheme === "dark" && isMenuOpen ? "bg-zinc-900" : ldTheme === "light" && isMenuOpen ? "bg-white" : ""}`}
       >
         <Link
           to="#"
