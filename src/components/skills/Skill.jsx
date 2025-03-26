@@ -1,5 +1,5 @@
 import React from "react";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
 
 function Skill({ heading, message }) {
   const { ldTheme } = useLightDarkTheme();

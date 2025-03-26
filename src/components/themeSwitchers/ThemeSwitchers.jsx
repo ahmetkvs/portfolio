@@ -1,6 +1,6 @@
 import React from "react";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 
 function ThemeSwitchers() {
   const { ldTheme, setLdTheme } = useLightDarkTheme();

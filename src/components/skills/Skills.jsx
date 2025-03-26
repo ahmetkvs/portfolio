@@ -1,8 +1,8 @@
 import React from "react";
 import Skill from "./Skill";
 import skillsContent from "../../data/skillsContent";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 
 function Skills() {
   const { ldTheme } = useLightDarkTheme();

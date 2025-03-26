@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext"; // Import the context
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 import { portfolioContent } from "../../data/portfolioContent";
 
 function Footer() {

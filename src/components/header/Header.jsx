@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
 import { portfolioContent } from "../../data/portfolioContent";
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 
 function Header() {
   const { ldTheme } = useLightDarkTheme();

@@ -3,7 +3,7 @@ import HomeLayout from "../layouts/HomeLayout";
 import ThemeSwitchers from "../components/themeSwitchers/ThemeSwitchers";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import { useLightDarkTheme } from "../contexts/LightDarkThemeContext";
+import useLightDarkTheme from "../hooks/useLightDarkTheme";
 
 function Home() {
   const { ldTheme } = useLightDarkTheme();

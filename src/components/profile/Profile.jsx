@@ -1,7 +1,7 @@
 import React from "react";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
 import { portfolioContent } from "../../data/portfolioContent";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 
 function Profile() {
   const { ldTheme } = useLightDarkTheme();

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLightDarkTheme } from "../../contexts/LightDarkThemeContext";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useLangTheme } from "../../contexts/LanguageThemeContext";
+import useLightDarkTheme from "../../hooks/useLightDarkTheme";
+import useLangTheme from "../../hooks/useLangTheme";
 
 function Navbar() {
   const { ldTheme } = useLightDarkTheme();
