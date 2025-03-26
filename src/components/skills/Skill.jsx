@@ -6,11 +6,11 @@ function Skill({ heading, message }) {
 
   return (
     <div>
-      <h1
+      <h3
         className={`text-2xl mb-6 ${ldTheme === "dark" ? "text-violet-400" : "text-violet-600"}`}
       >
         {heading}
-      </h1>
+      </h3>
       <p className={`${ldTheme === "dark" ? "text-white" : "text-gray-600"}`}>
         {message}
       </p>

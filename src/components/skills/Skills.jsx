@@ -1,4 +1,3 @@
-import React from "react";
 import Skill from "./Skill";
 import skillsContent from "../../data/skillsContent";
 import useLightDarkTheme from "../../hooks/useLightDarkTheme";
