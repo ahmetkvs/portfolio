@@ -1,6 +1,6 @@
 # Ahmet Kavas - Portfolio Website
 
-This repository contains the source code for my personal portfolio website. I am a web developer trainee currently learning and building projects to showcase my skills.
+This repository contains the source code for my personal portfolio website.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This repository contains the source code for my personal portfolio website. I am
 
 ## About
 
-My name is Ahmet Kavas, and I am a web developer trainee based in Turkey. This website serves as my portfolio to showcase my frontend development skills and my journey in learning web development. I am currently focusing on building projects with React and other modern web technologies.
+My name is Ahmet, this website serves as my portfolio to showcase my frontend development skills and my journey in learning web development. I am currently focusing on building projects with React and other modern web technologies.
 
 ## Technologies Used
 
@@ -44,15 +44,23 @@ The main components of this project include:
 ## Development Process
 
 - **Initial Setup:** Project was initialized using Vite with React.
-- ...
+- **Layout and componentization :** The project's layout was structured with a component-based architecture for better organization and reusability.
+- Key components include:
+  - `Navbar`: Handles navigation and logo, mobile-friendly hamburger menu.
+  - `ThemeSwitchers`: Manages theme and language preferences.
+  - `Header`: Displays the main introduction and call-to-action.
+  - `Skills`: Self-explanatory.
+  - `Profile`: Presents profile details and "About Me" information.
+  - `Footer`: Contact information and social links.
+- Layout components like `HomeLayout` were used to structure the main page content.
 
 ## Future Enhancements
 
-- Implementing the full portfolio sections (Projects, Skills, Profile).
-- Integrating the blog functionality.
+- Implementing the projects section.
 - Adding more detailed project descriptions and live demos.
+- Integrating the blog functionality.
 - ...
 
 ---
 
-**Last Updated:** [22.03.2025]
+**Last Updated:** [26.03.2025]
