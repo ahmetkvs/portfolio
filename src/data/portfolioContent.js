@@ -11,7 +11,7 @@ export const portfolioContent = {
           from foundational networking principles to the dynamic world of modern
           web development. I thrive on creating seamless user experiences and am
           eager to contribute my skills to innovative projects.`,
-      tr: `Merhaba, ben Ahmet. Kullanıcı dostu ve verimli web uygulamaları geliştirmeye tutkuyla bağlı bir full-stack geliştiriciyim. Bilgisayar bilimlerinin temellerine duyduğum derin merakla başlayan yolculuğum, temel ağ prensiplerinden modern web geliştirme dünyasına uzandı. Akıcı ve etkileyici kullanıcı deneyimleri oluşturmayı seviyorum ve becerilerimi yenilikçi projelere katkı sağlamak için kullanmaya hevesliyim.`,
+      tr: `Merhaba, ben Ahmet. Kullanıcı dostu ve verimli web uygulamaları geliştirmeye tutkuyla bağlı bir full-stack geliştiriciyim. Bilgisayar bilimlerinin temellerine duyduğum derin merakla başlayan yolculuğum, temel ağ prensiplerinden modern web geliştirme dünyasına uzandı. Akıcı ve etkileyici kullanıcı deneyimleri oluşturmak ve becerilerimi yenilikçi projelere katkı sağlamak için kullanmaya hevesliyim.`,
     },
     button: {
       en: "Hire Me",
@@ -62,7 +62,7 @@ export const portfolioContent = {
       },
       text: {
         en: "Driven by a methodical approach to learning, I began my journey by exploring the intricacies of computer systems, starting with networking fundamentals and progressing through a rigorous Information Systems Engineering degree at Sakarya University. This foundation has shaped my perspective as a developer, emphasizing a deep understanding of core concepts. My passion for building tools that empower users led me to a full-stack development bootcamp at Workintech, where I've honed my skills in React, JS and more. I'm excited to apply my knowledge and contribute to impactful projects.",
-        tr: "Her şeyi temelden öğrenmeyi seven biri olarak, önce Sakarya Üniversitesi'nde Bilgi Sistemleri Mühendisliği okudum. Sonrasında bilgisayar sistemlerinin detaylarını keşfetmeye başladım ve ağ temellerinden başlayarak kendimi bu alanda geliştirdim. Bu süreç, bir geliştirici olarak bakış açımı şekillendirdi ve temel kavramlara olan hakimiyetimi güçlendirdi. Kullanıcıların hayatını kolaylaştıran araçlar geliştirme tutkum, beni Workintech’teki full-stack geliştirme bootcamp’ine yönlendirdi. Burada React, JavaScript ve diğer teknolojilerde yetkinlik kazandım. Şimdi ise edindiğim bilgileri gerçek dünyada değer yaratmak için kullanmaya hazırım.",
+        tr: "Her şeyi temelden öğrenmeyi isteği ile Yazılım Mühendisliği yoluna koyuldum. Bu yola Sakarya Üniversitesi'nde Bilişim Sistemleri Mühendisliği okuyarak başladım. Bu süreçte mühendislik temelleri, sistem dizayn temelleri gibi bir çok eğitim aldım. Bu eğitimler, bir geliştirici olarak bakış açımı şekillendirdi ve temel kavramlara olan hakimiyetimi güçlendirdi. Kullanıcıların hayatını kolaylaştıran araçlar geliştirmeye tutkum, beni Workintech’teki Full-stack Developer bootcamp’ine yönlendirdi. Burada React, JavaScript ve benzeri frontend teknolojilerini kullanarak onlarca proje yaptım. Şimdi ise edindiğim bilgileri gerçek dünyada değer yaratmak için kullanmaya hazırım.",
       },
     },
   },

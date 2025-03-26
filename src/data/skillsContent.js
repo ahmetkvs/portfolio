@@ -20,7 +20,7 @@ const skillsContent = [
     tr: {
       heading: "React",
       message:
-        "React.js kullanarak ölçeklenebilir ve sürdürülebilir kullanıcı arayüzleri geliştirme konusunda yetenekli. Bileşen tabanlı mimari, durum yönetimi ve React Hooks konusunda uzmanlık.",
+        "React.js kullanarak ölçeklenebilir ve sürdürülebilir kullanıcı arayüzleri geliştirme konusunda yetenekli. Bileşen tabanlı mimari, durum yönetimi ve React Hooks konusunda yetkin.",
     },
   },
   {
