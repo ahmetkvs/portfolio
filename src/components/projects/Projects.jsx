@@ -1,3 +1,4 @@
+import React from "react";
 import useLightDarkTheme from "../../hooks/useLightDarkTheme";
 import useLangTheme from "../../hooks/useLangTheme";
 import Project from "./Project";
@@ -19,12 +20,14 @@ function Projects() {
   return (
     <section className="w-full py-16 px-4 md:px-8 lg:px-16">
       <h2
-        className={`text-4xl font-semibold mb-8 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
+        className={`text-4xl font-semibold mb-8 ${
+          ldTheme === "dark" ? "text-white" : "text-gray-700"
+        }`}
       >
         {langTheme === "en" ? "Projects" : "Projeler"}
       </h2>
-      {data.map((project) => {
-        return (
+      <div className="flex">
+        {data.map((project) => (
           <Project
             key={project.id}
             imgUrl={project.image}
@@ -36,8 +39,8 @@ function Projects() {
             langTheme={langTheme}
             ldTheme={ldTheme}
           />
-        );
-      })}
+        ))}
+      </div>
     </section>
   );
 }

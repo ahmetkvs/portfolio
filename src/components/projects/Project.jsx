@@ -11,8 +11,10 @@ function Project({
   ldTheme,
 }) {
   return (
-    <div className="w-1/3 px-4 py-4">
-      <div className="rounded-xl shadow-md overflow-hidden h-full flex flex-col">
+    <div className="w-full md:w-1/3 px-4 py-4">
+      <div
+        className={`rounded-lg overflow-hidden h-full flex flex-col ${ldTheme === "dark" ? "bg-black" : "bg-[#F5F5F5]"}`}
+      >
         <div className="w-full h-64">
           <img
             src={imgUrl}
@@ -20,7 +22,7 @@ function Project({
             className="w-full h-full object-cover rounded-t-xl"
           />
         </div>
-        <div className="p-4 flex-grow">
+        <div className="p-4 flex-grow flex flex-col justify-between">
           <h3
             className={`text-3xl my-5 ${
               ldTheme === "dark" ? "text-violet-400" : "text-violet-600"
@@ -31,7 +33,7 @@ function Project({
           <p
             className={`${
               ldTheme === "dark" ? "text-white" : "text-gray-600"
-            } max-h-20 overflow-hidden`}
+            } overflow-hidden`}
           >
             {description}
           </p>
@@ -48,10 +50,16 @@ function Project({
             })}
           </div>
         </div>
-        <div className="p-4">
-          <div className="flex justify-between mt-4 underline text-lg">
-            <a href={githubUrl}>Github</a>
-            <a href={deployUrl}>
+        <div className="p-4 mt-auto">
+          <div
+            className={`${
+              ldTheme === "dark" ? "text-white" : "text-gray-600"
+            } flex justify-between mt-4 underline text-lg`}
+          >
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
+            <a href={deployUrl} target="_blank" rel="noopener noreferrer">
               {langTheme === "en" ? "View Site" : "Siteye Git"}
             </a>
           </div>
