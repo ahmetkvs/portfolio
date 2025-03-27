@@ -11,9 +11,9 @@ function Project({
   ldTheme,
 }) {
   return (
-    <div className="w-full md:w-1/3 px-4 py-4">
+    <div className="w-full lg:w-1/3 px-4 py-8">
       <div
-        className={`rounded-lg overflow-hidden h-full flex flex-col ${ldTheme === "dark" ? "bg-black" : "bg-[#F5F5F5]"}`}
+        className={`w-9/10 mx-auto rounded-lg overflow-hidden h-full flex flex-col ${ldTheme === "dark" ? "bg-black" : "bg-[#F5F5F5]"}`}
       >
         <div className="w-full h-64">
           <img
@@ -53,7 +53,7 @@ function Project({
         <div className="p-4 mt-auto">
           <div
             className={`${
-              ldTheme === "dark" ? "text-violet-400" : "text-violet-600"
+              ldTheme === "dark" ? "text-white" : "text-gray-600"
             } flex justify-between mt-4 underline text-lg`}
           >
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
