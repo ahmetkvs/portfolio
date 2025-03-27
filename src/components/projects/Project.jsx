@@ -53,7 +53,7 @@ function Project({
         <div className="p-4 mt-auto">
           <div
             className={`${
-              ldTheme === "dark" ? "text-white" : "text-gray-600"
+              ldTheme === "dark" ? "text-violet-400" : "text-violet-600"
             } flex justify-between mt-4 underline text-lg`}
           >
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
