@@ -19,7 +19,7 @@ function Project({
           <img
             src={imgUrl}
             alt="project-image"
-            className="w-full h-full object-cover rounded-t-xl"
+            className="w-full h-full object-cover rounded-sm"
           />
         </div>
         <div className="p-4 flex-grow flex flex-col justify-between">
