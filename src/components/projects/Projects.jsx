@@ -43,7 +43,10 @@ function Projects() {
   }
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16">
+    <section
+      id="projects-section"
+      className="w-full py-16 px-4 md:px-8 lg:px-16"
+    >
       <h2
         className={`text-4xl font-semibold mb-8 ${
           ldTheme === "dark" ? "text-white" : "text-gray-700"

@@ -49,30 +49,30 @@ function Navbar() {
             : "hidden md:flex"
         } ${ldTheme === "dark" && isMenuOpen ? "bg-zinc-900" : ldTheme === "light" && isMenuOpen ? "bg-white" : ""}`}
       >
-        <Link
-          to="#"
+        <a
+          href="#"
           className={`font-semibold text-lg py-2 px-4 ${
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
           Blog
-        </Link>
-        <Link
-          to="#skills-section"
+        </a>
+        <a
+          href="#skills-section"
           className={`font-semibold text-lg py-2 px-4 ${
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
           {langTheme === "en" ? "Skills" : "Yetenekler"}
-        </Link>
-        <Link
-          to="#projects-section"
+        </a>
+        <a
+          href="#projects-section"
           className={`font-semibold text-lg py-2 px-4 ${
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
           {langTheme === "en" ? "Projects" : "Projeler"}
-        </Link>
+        </a>
         <Link
           to="#"
           className={`px-4 py-2 text-lg rounded-md transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800 transform hover:scale-105 ${

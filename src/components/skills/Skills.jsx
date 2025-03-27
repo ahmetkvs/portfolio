@@ -8,7 +8,7 @@ function Skills() {
   const { langTheme } = useLangTheme();
 
   return (
-    <section className="py-16">
+    <section id="skills-section" className="py-16">
       <div className="w-full mx-auto px-4 md:px-8 lg:px-16">
         <h2
           className={`text-4xl font-semibold mb-8 ${ldTheme === "dark" ? "text-white" : "text-black"}`}
