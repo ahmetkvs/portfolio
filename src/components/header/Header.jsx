@@ -29,6 +29,7 @@ function Header() {
             : portfolioContent.header.main.tr}
         </p>
         <div className="flex flex-wrap gap-2">
+          {/* 
           <button
             className={`px-4 py-2 rounded-md transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800 transform hover:scale-105 ${
               ldTheme === "dark"
@@ -40,6 +41,7 @@ function Header() {
               ? portfolioContent.header.button.en
               : portfolioContent.header.button.tr}
           </button>
+          */}
           <a
             href="https://github.com/ahmetkvs"
             target="_blank"

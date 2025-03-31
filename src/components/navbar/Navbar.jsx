@@ -73,6 +73,7 @@ function Navbar() {
         >
           {langTheme === "en" ? "Projects" : "Projeler"}
         </a>
+        {/*
         <Link
           to="#"
           className={`px-4 py-2 text-lg rounded-md transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800 transform hover:scale-105 ${
@@ -83,6 +84,7 @@ function Navbar() {
         >
           {langTheme === "en" ? "Hire me" : "Benimle Çalışın"}
         </Link>
+        */}
       </div>
     </nav>
   );
