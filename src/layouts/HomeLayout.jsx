@@ -3,10 +3,10 @@ import Profile from "../components/profile/Profile";
 import Projects from "../components/projects/Projects";
 import Skills from "../components/skills/Skills";
 
-function HomeLayout() {
+function HomeLayout({ onHireMeClick }) {
   return (
     <>
-      <Header />
+      <Header onHireMeClick={onHireMeClick} />
       <Skills />
       <hr className="w-full border-t-2 border-solid border-gray-300" />
       <Profile />

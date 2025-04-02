@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import useLightDarkTheme from "../../hooks/useLightDarkTheme";
 import useLangTheme from "../../hooks/useLangTheme";
 
-function Navbar() {
+function Navbar({ onHireMeClick }) {
   const { ldTheme } = useLightDarkTheme();
   const { langTheme } = useLangTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,8 +73,9 @@ function Navbar() {
         >
           {langTheme === "en" ? "Projects" : "Projeler"}
         </a>
-        <Link
-          to="#"
+        <a
+          onClick={() => onHireMeClick()}
+          href="#footer-section"
           className={`px-4 py-2 text-lg rounded-md transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800 transform hover:scale-105 ${
             ldTheme === "dark"
               ? "bg-slate-200 border-2 border-slate-300 text-zinc-900 hover:bg-slate-100 hover:border-slate-200"
@@ -82,7 +83,7 @@ function Navbar() {
           }`}
         >
           {langTheme === "en" ? "Hire me" : "Benimle Çalışın"}
-        </Link>
+        </a>
       </div>
     </nav>
   );

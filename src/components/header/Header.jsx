@@ -3,7 +3,7 @@ import { portfolioContent } from "../../data/portfolioContent";
 import useLightDarkTheme from "../../hooks/useLightDarkTheme";
 import useLangTheme from "../../hooks/useLangTheme";
 
-function Header() {
+function Header({ onHireMeClick }) {
   const { ldTheme } = useLightDarkTheme();
   const { langTheme } = useLangTheme();
   return (
@@ -29,7 +29,9 @@ function Header() {
             : portfolioContent.header.main.tr}
         </p>
         <div className="flex flex-wrap gap-2">
-          <button
+          <a
+            href="#footer-section"
+            onClick={() => onHireMeClick()}
             className={`px-4 py-2 rounded-md transition-colors duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400 focus:ring-offset-2 focus:ring-offset-violet-800 transform hover:scale-105 ${
               ldTheme === "dark"
                 ? "bg-slate-200 border-2 border-slate-300 text-zinc-900 hover:bg-slate-100 hover:border-slate-200"
@@ -39,7 +41,7 @@ function Header() {
             {langTheme === "en"
               ? portfolioContent.header.button.en
               : portfolioContent.header.button.tr}
-          </button>
+          </a>
           <a
             href="https://github.com/ahmetkvs"
             target="_blank"
