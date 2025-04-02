@@ -1,6 +1,7 @@
 import React from "react";
 import useLightDarkTheme from "../../hooks/useLightDarkTheme";
 import useLangTheme from "../../hooks/useLangTheme";
+import ToggleSwitch from "./ToggleSwitch";
 
 function ThemeSwitchers() {
   const { ldTheme, setLdTheme } = useLightDarkTheme();
@@ -14,46 +15,51 @@ function ThemeSwitchers() {
     setLangTheme(langTheme === "en" ? "tr" : "en");
   };
 
+  const isDarkMode = ldTheme === "dark";
+  const isTurkish = langTheme === "tr";
+
   return (
-    <aside className="my-4 flex w-full justify-end  px-4 md:px-8 lg:px-16">
-      <div className="flex gap-4 items-center ">
-        <label
-          className={`text-sm ${
-            ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
-          }`}
-          htmlFor="ldTheme"
-        >
-          {langTheme === "en" ? "Dark Mode" : "Karanlık Modu"}
-        </label>
-        <input
-          id="ldTheme"
-          type="checkbox"
-          checked={ldTheme === "dark"}
-          onChange={handleThemeToggle}
-          className="form-checkbox h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
-        />
+    <aside className="my-4 flex w-full justify-end px-4 md:px-8 lg:px-16">
+      <div className="flex items-center gap-x-6 gap-y-2 flex-wrap">
+        <div className="flex items-center gap-2">
+          <label
+            id="darkModeLabel"
+            className={`text-sm font-medium ${
+              isDarkMode ? "text-zinc-100" : "text-zinc-900"
+            }`}
+            htmlFor="ldTheme"
+          >
+            {isTurkish ? "Karanlık Mod" : "Dark Mode"}
+          </label>
+          <ToggleSwitch
+            id="ldTheme"
+            checked={isDarkMode}
+            onChange={handleThemeToggle}
+            labelId="darkModeLabel"
+          />
+        </div>
         <p
-          className={`| ${
-            ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
-          }`}
+          className={`text-2xl ${isDarkMode ? "text-zinc-500" : "text-zinc-400"}`}
         >
           |
         </p>
-        <label
-          htmlFor="langTheme"
-          className={`text-sm ${
-            ldTheme === "dark" ? "text-zinc-100" : "text-zinc-900"
-          }`}
-        >
-          {langTheme === "en" ? "Türkçe'ye geç" : "Switch to English"}
-        </label>
-        <input
-          type="checkbox"
-          id="langTheme"
-          checked={langTheme === "tr"}
-          onChange={handleLanguageChange}
-          className="form-checkbox h-5 w-5 text-indigo-600 rounded focus:ring-indigo-500"
-        />
+        <div className="flex items-center gap-2">
+          <label
+            id="langToggleLabel"
+            className={`text-sm font-medium ${
+              isDarkMode ? "text-zinc-100" : "text-zinc-900"
+            }`}
+            htmlFor="langTheme"
+          >
+            {isTurkish ? "Switch to English" : "Türkçe'ye geç"}
+          </label>
+          <ToggleSwitch
+            id="langTheme"
+            checked={isTurkish}
+            onChange={handleLanguageChange}
+            labelId="langToggleLabel"
+          />
+        </div>
       </div>
     </aside>
   );
