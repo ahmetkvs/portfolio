@@ -24,7 +24,7 @@ function Home() {
       setIsContactHighlighted(false);
       highlightTimerRef.current = null;
       console.log("Highlight off");
-    }, 1000);
+    }, 1500);
   }, []);
 
   useEffect(() => {
