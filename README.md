@@ -23,7 +23,7 @@ My name is Ahmet, this website serves as my portfolio to showcase my frontend de
   - React
   - Vite
   - Tailwind CSS
-  - ...
+  - React Testing Library
 
 - **Deployment:**
 
@@ -37,8 +37,16 @@ My name is Ahmet, this website serves as my portfolio to showcase my frontend de
 The main components of this project include:
 
 - `src/`: Contains the React source code.
+- `src/components`: Contains each components source code.
+- `src/context`: Contains ContextAPI source code for DarkMode and Language Switching.
+- `src/context`: Contains ContextAPI source code for DarkMode and Language Switching.
+- `src/hooks`: Contains contains custom hooks for api req, language switching, dark mode switching and persistence with localStorage.
+- `src/layouts`: Contains contains homeLayout (components for home page expect navbar and footer).
+- `src/pages`: Contains contains home page, with layout, navbar and footer.
+- `src/services`: Contains contains axios api request for projects.
 - `public/`: Contains static assets like the logo.
 - `index.html`: The main HTML file.
+- `App.jsx`: The entry point.
 - `README.md`: This file, providing project information.
 
 ## Development Process
@@ -51,16 +59,15 @@ The main components of this project include:
   - `Header`: Displays the main introduction and call-to-action.
   - `Skills`: Self-explanatory.
   - `Profile`: Presents profile details and "About Me" information.
+  - `Projects`: Presents currently done projects.
   - `Footer`: Contact information and social links.
 - Layout components like `HomeLayout` were used to structure the main page content.
 
 ## Future Enhancements
 
-- Implementing the projects section.
-- Adding more detailed project descriptions and live demos.
 - Integrating the blog functionality.
 - ...
 
 ---
 
-**Last Updated:** [26.03.2025]
+**Last Updated:** [02.04.2025]
