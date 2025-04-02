@@ -49,14 +49,14 @@ function Navbar({ onHireMeClick }) {
             : "hidden md:flex"
         } ${ldTheme === "dark" && isMenuOpen ? "bg-zinc-900" : ldTheme === "light" && isMenuOpen ? "bg-white" : ""}`}
       >
-        <a
+        {/*<a
           href="#"
           className={`font-semibold text-lg py-2 px-4 ${
             ldTheme === "dark" ? "text-slate-400" : "text-gray-700"
           }`}
         >
           Blog
-        </a>
+        </a> */}
         <a
           href="#skills-section"
           className={`font-semibold text-lg py-2 px-4 ${
